@@ -1,0 +1,31 @@
+<!-- register.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registrasi Pengguna</title>
+</head>
+<body>
+    
+    <div class="registration-container">
+        <h2>Registrasi Pengguna</h2>
+        <form id="registerForm" onsubmit="registerUser(event)">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Daftar</button>
+            
+        </form>
+        <p id="registrationMessage"></p>
+        <a href="login.php">Sudah punya akun? Login di sini.</a>
+    </div>
+
+    <script src="registration.js"></script>
+</body>
+</html>
